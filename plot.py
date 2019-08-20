@@ -145,6 +145,10 @@ if __name__ == '__main__':
     labeled = pd.read_csv('../sklearn-example/data/xy-example.csv')
     classifier = MultinomialNB()
 
+    print('')
+    labeled_copy = labeled.copy()
+    labeled_copy.label = [categories[c] for c in labeled_copy.label]
+    print(labeled_copy.to_string(index=False))
     print('\nTraining classifier on 2d labeled data')
     print('...')
     classifier.fit(labeled.values[:, :2], labeled.label)
@@ -165,6 +169,9 @@ if __name__ == '__main__':
 
     cluster_data()
 
+    data3d_copy = data3d.copy()
+    data3d_copy.label = [categories[c] for c in data3d.label]
+    print(data3d_copy.to_string(index=False))
     print('\nShowing 3d labeled data')
     print('Close the plot window to exit')
     show(data3d, title='3d Labeled Data for Supervised Learning')
