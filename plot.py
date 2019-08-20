@@ -155,7 +155,6 @@ if __name__ == '__main__':
     def on_click(event):
         on_click_fig(fig, classifier, event)
 
-
     fig.canvas.mpl_connect('button_press_event', on_click)
     plt.show()
 
