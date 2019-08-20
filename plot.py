@@ -65,9 +65,9 @@ def plot_2d_unlabeled(data, title='2d Unlabeled Data'):
     fig = plt.figure()
     ax = plt.axes()
     if type(data) == pd.core.frame.DataFrame:
-        ax.scatter(data.x, data.y, marker='o', color='gray')
+        ax.scatter(data.x, data.y, s=MARKER_SIZE, marker='o', color='gray')
     else:
-        ax.scatter(data[:, 0], data[:, 1], marker='o', color='gray')
+        ax.scatter(data[:, 0], data[:, 1], s=MARKER_SIZE, marker='o', color='gray')
     plt.title(title)
     return fig
 

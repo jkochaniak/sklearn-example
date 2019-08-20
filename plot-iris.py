@@ -1,4 +1,5 @@
 from mpl_toolkits.mplot3d import Axes3D
+from matplotlib.lines import Line2D
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -41,5 +42,8 @@ ax.set_xlabel('sepal length (cm)')
 ax.set_ylabel('sepal width (cm)')
 ax.set_zlabel('petal length (cm)')
 cbar.set_label('petal width (cm)')
+legend_elements = [Line2D([0], [0], color='w', marker=m, markerfacecolor='r', label=iris.target_names[idx])
+                   for idx, m in enumerate(MARKERS)]
+ax.legend(handles=legend_elements, loc='upper left')
 plt.title('Iris dataset')
 plt.show()
