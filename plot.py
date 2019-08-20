@@ -66,10 +66,6 @@ def plot_clusters(points, clusters, title='Clusters'):
 
 
 if __name__ == '__main__':
-    print('\nCategories:')
-    print('  s    square')
-    print('  o    circle')
-    print('  ^    triangle\n')
     categories = {
         's': 'square',
         'o': 'circle',
