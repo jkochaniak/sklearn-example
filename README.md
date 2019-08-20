@@ -1,4 +1,4 @@
-Clone this repo into a directory named sklearn-example then run:
+Clone this repo into a directory named `sklearn-example` then run:
 ```
 cd sklearn-example
 virtualenv env
