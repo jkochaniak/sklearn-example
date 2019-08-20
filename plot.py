@@ -166,22 +166,6 @@ if __name__ == '__main__':
 
     cluster_data()
 
-    #
-    # print('\nClustered unlabeled data into 2 clusters')
-    # print('Close the plot window to continue...')
-    # clusters_2 = KMeans(n_clusters=2).fit_predict(unlabeled)
-    # show(unlabeled, clusters_2, '2 clusters')
-    #
-    # print('\nClustered unlabeled data into 5 clusters')
-    # print('Close the plot window to continue...')
-    # clusters_5 = KMeans(n_clusters=5).fit_predict(unlabeled)
-    # show(unlabeled, clusters_5, '5 clusters')
-    #
-    # print('\nClustered unlabeled data into 3 clusters')
-    # print('Close the plot window to continue...')
-    # clusters_3 = KMeans(n_clusters=3).fit_predict(unlabeled)
-    # show(unlabeled, clusters_3, '3 clusters')
-
     print('\nShowing 3d labeled data')
     print('Close the plot window to exit')
     show(data3d, title='3d Labeled Data for Supervised Learning')
