@@ -163,6 +163,7 @@ if __name__ == '__main__':
     plt.show()
 
     unlabeled = labeled.values[:, :2]
+    print(pd.DataFrame(data=unlabeled, columns=['x', 'y']).to_string(index=False))
     cprint('\nShowing 2d unlabeled data that will be clustered', attrs=['bold'])
     show(unlabeled, title='2d Unlabeled Data for Unsupervised Learning', show_plot=False)
     plt.show(block=False)
